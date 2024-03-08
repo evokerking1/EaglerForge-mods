@@ -1,19 +1,20 @@
 var PluginAPI = ModAPI
-
-ModAPI.require("LocalPlayerData")
+ModAPI.require("LocalPlayerData");
 PluginAPI.require("player");
+ModAPI.require("displayToChat")
 
 
-ModAPI.addEventListener("sendchatmessage"(message:"/heal"), heal())
+ModAPI.addEventListener("sendchatmessage"(message:"p!heal"), heal());
 
 
-ModAPI.addEventListener("key"(key:"35"), heal)
+ModAPI.addEventListener("key"(key:"35"), heal());
 
 
 ModAPI.addEventListener("update", spiderListener);
 
 function heal() {
     ModAPI.LocalPlayerData.setPlayerSPHealth({health: 20})
+    ModAPI.displayToChat({msg: String})
 }
 
 
