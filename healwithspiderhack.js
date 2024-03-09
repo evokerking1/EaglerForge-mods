@@ -1,5 +1,5 @@
 var PluginAPI = ModAPI
-ModAPI.require("LocalPlayerData");
+ModAPI.require("player");
 PluginAPI.require("player");
 ModAPI.require("displayToChat")
 
