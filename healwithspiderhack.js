@@ -1,7 +1,7 @@
 var PluginAPI = ModAPI
 ModAPI.require("player");
 PluginAPI.require("player");
-ModAPI.require("displayToChat")
+ModAPI.require("displayToChat");
 
 
 ModAPI.addEventListener("sendchatmessage"(message:"p!heal"), heal());
